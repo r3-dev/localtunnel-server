@@ -12,5 +12,5 @@ COPY . /app
 ENV NODE_ENV=production
 ENV PORT=""
 ENV DOMAIN=""
-ENV SECURE=true
+ENV SECURE=""
 ENTRYPOINT node -r esm ./bin/server --port ${PORT} --domain ${DOMAIN} --secure ${SECURE}
